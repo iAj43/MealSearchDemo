@@ -12,7 +12,7 @@ Fetching meal categories with details of that category, and showing in the table
 
 
 ## Run
-To run the News project, clone the repo, and run ```pod install``` from the project directory first.
+To run the project, clone the repo, and run ```pod install``` from the project directory first.
 
 ## Usage
 ### Initialization 
