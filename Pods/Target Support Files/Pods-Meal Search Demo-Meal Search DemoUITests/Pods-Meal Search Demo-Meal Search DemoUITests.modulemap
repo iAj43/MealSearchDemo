@@ -1,0 +1,6 @@
+framework module Pods_Meal_Search_Demo_Meal_Search_DemoUITests {
+  umbrella header "Pods-Meal Search Demo-Meal Search DemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
