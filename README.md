@@ -2,7 +2,7 @@
 Fetching meal categories with details of that category, and showing in the table view by MVVM architecture
 
 ## Requirements
-- iOS 11+
+- iOS 12+
 - Cocoapods
 
 ## Screenshots
