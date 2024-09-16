@@ -14,7 +14,6 @@ struct CategoriesBaseModel : Codable {
     var categories : [Categories]?
 
     enum CodingKeys: String, CodingKey {
-
         case categories = "categories"
     }
 
@@ -34,7 +33,6 @@ struct Categories : Codable {
     var dynamicHeight: Int?
     
     enum CodingKeys: String, CodingKey {
-        
         case categoryID = "idCategory"
         case categoryThumbStr = "strCategoryThumb"
         case categoryTitleStr = "strCategory"

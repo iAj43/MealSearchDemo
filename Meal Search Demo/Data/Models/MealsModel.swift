@@ -14,7 +14,6 @@ struct MealsBaseModel : Codable {
     let meals : [Meals]?
 
     enum CodingKeys: String, CodingKey {
-
         case meals = "meals"
     }
 
@@ -31,7 +30,6 @@ struct Meals : Codable {
     let mealStr : String?
 
     enum CodingKeys: String, CodingKey {
-
         case mealID = "idMeal"
         case mealThumbStr = "strMealThumb"
         case mealStr = "strMeal"

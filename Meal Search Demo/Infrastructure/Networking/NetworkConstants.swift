@@ -13,6 +13,7 @@ enum NetworkConstants {
     static let categories = "categories.php"
     static let filterCategory = "filter.php"
 }
+
 enum Environment {
     case staging
     case production

@@ -13,19 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - window
     var window: UIWindow?
 
-    //
     // MARK: - application didFinishLaunchingWithOptions
-    //
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         // MARK: - setup window & rootViewController here
-        window?.frame = UIScreen.main.bounds
-        window?.makeKeyAndVisible()
-        let mealCategoriesViewModel = MealCategoriesViewModel(useCaseProvider: MealRepo())
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let mealRepo = MealRepo()
+        let mealCategoriesViewModel = MealCategoriesViewModel(useCaseProvider: mealRepo)
         let mealCategoriesController = MealCategoriesController(viewModel: mealCategoriesViewModel)
-        let rootViewController = UINavigationController(rootViewController: mealCategoriesController)
-        let navigationController = setupNavigationBar(rootViewController)
-        window?.rootViewController = navigationController
+        let navigationController = UINavigationController(rootViewController: mealCategoriesController)
+        window?.rootViewController = setupNavigationBar(navigationController)
+        window?.makeKeyAndVisible()
         return true
     }
     
