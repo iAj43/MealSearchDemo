@@ -18,7 +18,7 @@ protocol NetworkManagerProtocol {
      */
     func fetchData<T: Decodable>(request: APIRequest)->Promise<T>
 }
-// MARK: - Genericnetworking class that will send request to the server and parse the response
+// MARK: - Generic networking class that will send request to the server and parse the response
 class NetworkManager: NetworkManagerProtocol {
     
     static let shared = NetworkManager()
